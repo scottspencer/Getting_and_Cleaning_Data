@@ -137,4 +137,4 @@ melted_data <- melt(data=mean_and_std_measures, id.vars=c("Subject", "Activity")
 tidy_data <- dcast(melted_data, Subject + Activity ~ variable, mean)
 
 # Finally, write the resulting data set out to a text file.
-write.table(x=tidy_data, file="tiny_data.txt", row.names=FALSE, quote=FALSE, sep="\t")
+write.table(x=tidy_data, file="tidy_data.txt", row.names=FALSE, quote=FALSE, sep="\t")
